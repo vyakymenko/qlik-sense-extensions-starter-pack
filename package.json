@@ -1,0 +1,36 @@
+{
+  "name": "qlik-sense-extensions-starter-pack",
+  "version": "1.0.0",
+  "description": "QlikSense Extensions SPINS Satori",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "3.1.0",
+    "gulp-sourcemaps": "2.6.3",
+    "rollup": "^0.54.0",
+    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-plugin-uglify": "^3.0.0",
+    "run-sequence": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vyakymenko/qlik-sense-extensions-starter-pack.git"
+  },
+  "scripts": {
+    "start": "gulp dev",
+    "build": "gulp build"
+  },
+  "keywords": [
+    "qliksense",
+    "extensions",
+    "javascript",
+    "gulp",
+    "es6",
+    "rollup"
+  ],
+  "author": "Valentyn Yakymenko <rayfesoul@gmail.com>",
+  "license": "MIT"
+}

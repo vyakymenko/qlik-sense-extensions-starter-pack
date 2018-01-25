@@ -1,0 +1,14 @@
+# Idea files
+.idea/
+
+# Node modules
+node_modules
+
+# Build/Target Files
+build/
+dist/
+dist-installers/
+
+.settings/
+
+.project
