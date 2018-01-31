@@ -112,6 +112,7 @@ TODO
 
 # Directory Structure
 
+```sh
 ├── LICENSE
 ├── README.md
 ├── gulpfile.js
@@ -148,6 +149,7 @@ TODO
         ├── scss.dev.js
         ├── scss.prod.js
         └── watch.dev.js
+```
 
 # In Development
  - Update Documentation.
