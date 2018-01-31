@@ -20,16 +20,16 @@ module.exports = () => {
   const tasks = directories
     .map(entry => {
       return rollup.rollup({
-        input: `${entry}/Script.js`,
+        input: `${entry}/Extension.js`,
         plugins: [
           uglify()
         ]
       })
         .then(bundle => {
           return bundle.write({
-            file: `${conf.dist.prod}${entry.split('src/')[1]}/Script.js`,
-            format: 'umd',
-            name: 'Script'
+            file: `${conf.dist.prod}${entry.split('src/')[1]}/Extension.js`,
+            format: 'cjs',
+            name: 'Extension'
           });
         })
     });

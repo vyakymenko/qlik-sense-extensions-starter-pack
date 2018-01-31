@@ -1,6 +1,6 @@
 {
   "name": "qlik-sense-extensions-starter-pack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "QlikSense Extensions SPINS Satori",
   "main": "gulpfile.js",
   "devDependencies": {

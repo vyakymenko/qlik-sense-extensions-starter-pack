@@ -22,17 +22,17 @@ module.exports = () => {
 
       const path = entry.replace(/\\/g, '/');
 
+      console.log(path);
+
       return rollup.rollup({
-        input: `${path}/Script.js`,
-        plugins: [
-          uglify()
-        ]
+        input: `${path}/Extension.js`,
       })
         .then(bundle => {
           return bundle.write({
-            file: `${conf.dist.prod}${path.split('src/')[1]}/Script.js`,
-            format: 'umd',
-            name: 'Script'
+            file: `${conf.dist.dev}${path.split('src/')[1]}/Extension.js`,
+            format: 'cjs',
+            name: 'Extension',
+            sourcemap: true
           });
         })
     });
