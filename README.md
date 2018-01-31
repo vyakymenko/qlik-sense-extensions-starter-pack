@@ -2,14 +2,14 @@
 
 [![Build Status](https://travis-ci.org/vyakymenko/qlik-sense-extensions-starter-pack.svg?branch=master)](https://travis-ci.org/vyakymenko/qlik-sense-extensions-starter-pack)
 
-QlikSense Extensions Starter Pack provides fast, reliable and extensible starter for the development of QlikSense extensions.
+Qlik Sense Extensions Starter Pack provides fast, reliable and extensible starter for the development of QlikSense extensions.
 
 # Version
 1.0.1
 
 # Tech
 
-QlikSense Extensions Starter Pack uses a number of open source projects to work properly:
+Qlik Sense Extensions Starter Pack uses a number of open source projects to work properly:
 
 * [Gulp] - the streaming build system
 * [Rollup] - awesome bundler
