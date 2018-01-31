@@ -6,7 +6,6 @@ const { lstatSync, readdirSync } = require('fs');
 const { join } = require('path');
 const es = require('event-stream');
 const rollup = require('rollup');
-const uglify = require('rollup-plugin-uglify');
 const conf = require('../config');
 
 module.exports = () => {
@@ -21,8 +20,6 @@ module.exports = () => {
     .map(entry => {
 
       const path = entry.replace(/\\/g, '/');
-
-      console.log(path);
 
       return rollup.rollup({
         input: `${path}/Extension.js`,
