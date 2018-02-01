@@ -1,6 +1,6 @@
 /**
- * ES6 JavaScript Compiling {Development}
- * @task js.build.dev
+ * ES6 JavaScript Compiling {Production}
+ * @task js.build.prod
  */
 const { lstatSync, readdirSync } = require('fs');
 const { join } = require('path');
@@ -18,17 +18,20 @@ module.exports = () => {
 
   const tasks = directories
     .map(entry => {
+
+      const path = entry.replace(/\\/g, '/');
+
       return rollup.rollup({
-        input: `${entry}/Script.js`
+        input: `${path}/Extension.js`,
       })
-      .then(bundle => {
-        return bundle.write({
-          file: `${conf.dist.dev}${entry.split('src/')[1]}/Script.js`,
-          format: 'umd',
-          name: 'Script',
-          sourcemap: true
-        });
-      })
+        .then(bundle => {
+          return bundle.write({
+            file: `${conf.dist.dev}${path.split('src/')[1]}/Extension.js`,
+            format: 'cjs',
+            name: 'Extension',
+            sourcemap: true
+          });
+        })
     });
 
   return es.merge.apply(tasks);

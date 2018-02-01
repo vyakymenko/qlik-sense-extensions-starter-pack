@@ -1,0 +1,10 @@
+{
+	"name" : "ExtensionWithLib",
+	"description" : "Test Extension with Lib for QlikSense",
+	"preview": "",
+	"type" : "visualization",
+	"version": "1.0.0",
+	"author": "Valentyn Yakymenko",
+	"repository" : "",
+  "dependencies" : { "qlik-sense" : ">=2.1.x" }
+}

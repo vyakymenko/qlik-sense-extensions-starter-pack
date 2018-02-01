@@ -1,10 +1,9 @@
 ﻿import { Log } from '../../API/Util';
 
 define([
-  'jquery',
   'qlik',
   'css!./css/styles.css'
-], ($, qlik) => {
+], (qlik) => {
   return {
     paint($element, layout) {
       $element.empty();
