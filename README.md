@@ -1,5 +1,6 @@
 # Introduction
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/vyakymenko/qlik-sense-extensions-starter-pack.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/vyakymenko/qlik-sense-extensions-starter-pack.svg?branch=master)](https://travis-ci.org/vyakymenko/qlik-sense-extensions-starter-pack)
 
 Qlik Sense Extensions Starter Pack provides fast, reliable and extensible starter for the development of QlikSense extensions.
