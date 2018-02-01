@@ -1,7 +1,7 @@
 /**
- * GET
- * @param url {string}
- * @param callback {function}
+ * Log
+ *
+ * @param msg {string}
  *
  * @returns {string}
  */

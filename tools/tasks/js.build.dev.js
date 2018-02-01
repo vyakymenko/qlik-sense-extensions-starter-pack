@@ -6,6 +6,7 @@ const { lstatSync, readdirSync } = require('fs');
 const { join } = require('path');
 const es = require('event-stream');
 const rollup = require('rollup');
+const babel = require('rollup-plugin-babel');
 const conf = require('../config');
 
 module.exports = () => {
@@ -23,12 +24,16 @@ module.exports = () => {
 
       return rollup.rollup({
         input: `${path}/Extension.js`,
+        plugins: [
+          babel({
+            exclude: 'node_modules/**'
+          })
+        ]
       })
         .then(bundle => {
           return bundle.write({
             file: `${conf.dist.dev}${path.split('src/')[1]}/Extension.js`,
             format: 'cjs',
-            name: 'Extension',
             sourcemap: true
           });
         })
