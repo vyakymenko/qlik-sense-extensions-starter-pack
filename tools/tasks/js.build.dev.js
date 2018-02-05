@@ -15,6 +15,8 @@ module.exports = () => {
     readdirSync(source).map(name => join(source, name)).filter(isDirectory);
 
   const directories = getDirectories(conf.src.extensions);
+  const split = path.split('/');
+  const extension = split[split.length -1];
 
   const tasks = directories
     .map(entry => {
@@ -22,13 +24,12 @@ module.exports = () => {
       const path = entry.replace(/\\/g, '/');
 
       return rollup.rollup({
-        input: `${path}/Extension.js`,
+        input: `${path}/${extension}.js`,
       })
         .then(bundle => {
           return bundle.write({
-            file: `${conf.dist.dev}${path.split('src/')[1]}/Extension.js`,
+            file: `${conf.dist.dev}${path.split('src/')[1]}/${extension}.js`,
             format: 'cjs',
-            name: 'Extension',
             sourcemap: true
           });
         })

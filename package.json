@@ -1,6 +1,6 @@
 {
   "name": "qlik-sense-extensions-starter-pack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "QlikSense Extensions Starter Pack",
   "main": "gulpfile.js",
   "devDependencies": {
