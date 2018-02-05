@@ -4,6 +4,9 @@
   "description": "QlikSense Extensions Starter Pack",
   "main": "gulpfile.js",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
     "del": "^3.0.0",
     "event-stream": "^3.3.4",
     "gulp": "^3.9.1",
@@ -11,7 +14,7 @@
     "gulp-sass": "3.1.0",
     "gulp-sourcemaps": "2.6.3",
     "rollup": "^0.55.0",
-    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-uglify": "^3.0.0",
     "run-sequence": "^2.2.0"
   },

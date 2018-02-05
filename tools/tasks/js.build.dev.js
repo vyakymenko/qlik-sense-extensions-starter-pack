@@ -15,13 +15,13 @@ module.exports = () => {
     readdirSync(source).map(name => join(source, name)).filter(isDirectory);
 
   const directories = getDirectories(conf.src.extensions);
-  const split = path.split('/');
-  const extension = split[split.length -1];
 
   const tasks = directories
     .map(entry => {
 
       const path = entry.replace(/\\/g, '/');
+      const split = path.split('/');
+      const extension = split[split.length -1];
 
       return rollup.rollup({
         input: `${path}/${extension}.js`,
