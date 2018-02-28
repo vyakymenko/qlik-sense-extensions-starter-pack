@@ -6,7 +6,7 @@
 Qlik Sense Extensions Starter Pack provides fast, reliable and extensible starter for the development of QlikSense extensions.
 
 # Version
-1.0.2
+1.0.3
 
 # Tech
 
@@ -123,6 +123,14 @@ TODO
 │   ├── API
 │   │   └── Util.js
 │   └── Extensions
+│       ├── ExtensionWithAMD
+│       │   ├── ExtensionWithAMD.js
+│       │   ├── ExtensionWithAMD.qext
+│       │   ├── css
+│       │   │   └── styles.scss
+│       │   ├── lib
+│       │   │   └── d3.min.js
+│       │   └── wbfolder.wbl
 │       ├── ExtensionWithLib
 │       │   ├── Extension.js
 │       │   ├── Extension.qext
