@@ -26,12 +26,14 @@
     "build": "gulp build"
   },
   "keywords": [
+    "qlikview",
     "qliksense",
     "extensions",
     "javascript",
     "gulp",
     "es6",
-    "rollup"
+    "rollup",
+    "typescript"
   ],
   "author": "Valentyn Yakymenko <vyakymenko>",
   "license": "MIT"
