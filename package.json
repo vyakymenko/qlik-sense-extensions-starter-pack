@@ -12,7 +12,7 @@
     "gulp-cssmin": "0.2.0",
     "gulp-sass": "4.0.1",
     "gulp-sourcemaps": "2.6.4",
-    "rollup": "^0.61.0",
+    "rollup": "^0.63.0",
     "rollup-plugin-babel": "3.0.7",
     "rollup-plugin-uglify": "4.0.0",
     "run-sequence": "2.2.1"
