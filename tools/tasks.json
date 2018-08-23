@@ -1,0 +1,28 @@
+{
+  "initialize": [
+    "noop"
+  ],
+
+  "dev": [
+    "initialize",
+
+    "clean.dev",
+    "assets.copy.dev",
+    "tslint",
+    "ts.build.dev",
+    "scss.dev",
+    "watch.dev"
+  ],
+  "build": [
+    "initialize",
+
+    "clean.prod",
+    "assets.copy.prod",
+    "tslint",
+    "ts.build.prod",
+    "scss.prod"
+  ],
+  "default": [
+    "dev"
+  ]
+}

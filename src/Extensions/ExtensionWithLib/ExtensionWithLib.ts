@@ -1,4 +1,4 @@
-﻿import './lib/moment.min.js'
+import './lib/moment.min.js';
 
 import { Log } from '../../API/Util';
 
@@ -11,7 +11,7 @@ define([
       $element.empty();
       $element.append(`<h1>Hello QlikSense! Moment: ${moment().format('MMMM Do YYYY, h:mm:ss a')}</h1>`);
 
-      Log(`Hello world!`)
+      Log(`Hello world!`);
     }
   };
 });

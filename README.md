@@ -6,7 +6,7 @@
 Qlik Sense Extensions Starter Pack provides fast, reliable and extensible starter for the development of QlikSense extensions.
 
 # Version
-1.0.3
+1.0.4
 
 # Tech
 
@@ -51,53 +51,49 @@ $ npm run build
 
 ```js
 /**
- * Project Configuration
- *
- * @path: gulp/config.js
+ * Configuration
  */
-module.exports = {
-	src: {
-		main: 'src/',  // <--- Source directory
-		extensions: 'src/Extensions/', // <--- Source directory with extensions
-		js: [
-			'src/**/*.js',
-			'src/*.js'
-		],
-		scss: [
-			'src/**/*.scss',
-			'src/*.scss'
-		],
-		assets: [
-			'src/*.gif',
-			'src/**/*.gif',
-			'src/*.png',
-			'src/**/*.png',
-			'src/*.jpg',
-			'src/**/*.jpg',
-			'src/**/*.wbl',
-			'src/*.wbl',
-			'src/**/*.qext',
-			'src/*.qext',
-			'src/**/*.txt',
-			'src/*.txt',
-			'src/libs/*.js',
-			'src/**/libs/*.js',
-			'src/**/libs/**/*.js',
-			'src/**/*.css',
-			'src/*.css'
-		]
-	},
-	dist: {
-		dev: 'dist/dev/', // <--- Dev build dist directory
-		prod: 'dist/prod/' // <--- Prod build dist directory
-	}
+export const Config: any = {
+  src: {
+    main: 'src/',
+    extensions: 'src/Extensions/',
+    ts: [
+      'src/**/*.ts',
+      'src/*.ts'
+    ],
+    scss: [
+      'src/**/*.scss',
+      'src/*.scss'
+    ],
+    assets: [
+      'src/*.gif',
+      'src/**/*.gif',
+      'src/*.png',
+      'src/**/*.png',
+      'src/*.jpg',
+      'src/**/*.jpg',
+      'src/**/*.svg',
+      'src/**/*.wbl',
+      'src/*.wbl',
+      'src/**/*.qext',
+      'src/*.qext',
+      'src/**/*.txt',
+      'src/*.txt',
+      'src/**/*.json',
+      'src/*.json',
+      'src/lib/*.js',
+      'src/**/lib/*.js',
+      'src/**/lib/**/*.js',
+      'src/**/*.css',
+      'src/*.css'
+    ]
+  },
+  dist: {
+    dev: 'dist/dev/',
+    prod: 'dist/prod/'
+  }
 };
-
 ```
-
-# Running tests
-
-TODO
 
 # Extensions Examples
 
@@ -116,7 +112,7 @@ TODO
 ```sh
 ├── LICENSE
 ├── README.md
-├── gulpfile.js
+├── gulpfile.ts
 ├── package-lock.json
 ├── package.json
 ├── src
@@ -124,45 +120,50 @@ TODO
 │   │   └── Util.js
 │   └── Extensions
 │       ├── ExtensionWithAMD
-│       │   ├── ExtensionWithAMD.js
 │       │   ├── ExtensionWithAMD.qext
+│       │   ├── ExtensionWithAMD.ts
 │       │   ├── css
 │       │   │   └── styles.scss
 │       │   ├── lib
 │       │   │   └── d3.min.js
 │       │   └── wbfolder.wbl
 │       ├── ExtensionWithLib
-│       │   ├── Extension.js
-│       │   ├── Extension.qext
+│       │   ├── ExtensionWithLib.qext
+│       │   ├── ExtensionWithLib.ts
 │       │   ├── css
 │       │   │   └── styles.scss
 │       │   ├── lib
 │       │   │   └── moment.min.js
 │       │   └── wbfolder.wbl
 │       └── TestExtension
-│           ├── Extension.js
-│           ├── Extension.qext
+│           ├── TestExtension.qext
+│           ├── TestExtension.ts
 │           ├── css
 │           │   └── styles.scss
 │           └── wbfolder.wbl
-└── tools
-    ├── config.js
-    ├── index.js
-    └── tasks
-        ├── assets.copy.dev.js
-        ├── assets.copy.prod.js
-        ├── clean.dev.js
-        ├── clean.prod.js
-        ├── js.build.dev.js
-        ├── js.build.prod.js
-        ├── scss.dev.js
-        ├── scss.prod.js
-        └── watch.dev.js
+├── tools
+│   ├── config.ts
+│   ├── tasks
+│   │   ├── assets.copy.dev.ts
+│   │   ├── assets.copy.prod.ts
+│   │   ├── clean.dev.ts
+│   │   ├── clean.prod.ts
+│   │   ├── noop.ts
+│   │   ├── scss.dev.ts
+│   │   ├── scss.prod.ts
+│   │   ├── ts.build.dev.ts
+│   │   ├── ts.build.prod.ts
+│   │   ├── tslint.ts
+│   │   └── watch.dev.ts
+│   ├── tasks.json
+│   └── utils
+│       ├── code_change_tools.ts
+│       ├── task.ts
+│       └── tasks_tools.ts
+├── tree.txt
+├── tsconfig.json
+└── tslint.json
 ```
-
-# In Development
- - Update Documentation.
- - Add Changelog.
  
 # License
 

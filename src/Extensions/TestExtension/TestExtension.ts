@@ -1,4 +1,4 @@
-﻿import { Log } from '../../API/Util';
+import { Log } from '../../API/Util';
 
 define([
   'qlik',
@@ -9,7 +9,7 @@ define([
       $element.empty();
       $element.append(`<p>Hello QlikSense</p>`);
 
-      Log(`Hello world!`)
+      Log(`Hello world!`);
     }
   };
 });
