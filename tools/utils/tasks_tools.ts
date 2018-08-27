@@ -29,36 +29,6 @@ function validateTasks(tasks: any) {
     }).filter((taskName: string) => !!taskName);
 }
 
-/**
- * Defines complex, composite tasks. The composite tasks
- * are simply a composition of another tasks.
- * Each composite tasks has the following format:
- *
- * "composite_task": ["task1", "task2"]
- *
- * This means that the format should be flat, with no nesting.
- *
- * The existing composite tasks are defined in
- * "tools/config/seed.tasks.json" and can be overriden by
- * editing the composite tasks project configuration.
- *
- * By default it is located in: "tools/config/project.tasks.json".
- *
- * Override existing tasks by simply providing a task
- * name and a list of tasks that this task hould execute.
- *
- * For instance:
- * ```
- * {
- *  "test": [
- *    "build.test",
- *    "mocha.run"
- *  ]
- * }
- * ```
- *
- * Note that the tasks do not support nested objects.
- */
 export function loadCompositeTasks(compositeFile: string): void {
   let compositeTasks: any;
   try {
