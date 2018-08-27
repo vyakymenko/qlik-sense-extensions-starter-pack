@@ -41,10 +41,8 @@ $ npm run build
 - [How to start](#how-to-start)
 - [Table of Content](#table-of-content)
 - [Configuration](#configuration)
-- [Running tests](#running-tests)
 - [Examples](#examples)
 - [Directory Structure](#directory-structure)
-- [In Development](#in-development)
 - [License](#license)
 
 # Configuration
@@ -95,7 +93,7 @@ export const Config: any = {
 };
 ```
 
-# Extensions Examples
+# Examples
 
 #### Test Extension
 
