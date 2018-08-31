@@ -9,7 +9,7 @@ import * as es from 'event-stream';
 import { Config } from '../config';
 
 const typescript = require('rollup-plugin-typescript');
-const uglify = require('rollup-plugin-uglify');
+const terser = require('rollup-plugin-terser').terser;
 const tsconfig = require('../../tsconfig.json');
 
 export = () => {
@@ -25,7 +25,7 @@ export = () => {
 
       const path = entry.replace(/\\/g, '/');
       const split = path.split('/');
-      const extension = split[split.length -1];
+      const extension = split[split.length - 1];
 
       return rollup.rollup({
         input: `${path}/${extension}.ts`,
@@ -36,7 +36,7 @@ export = () => {
               tsconfig: tsconfig
             }
           ),
-          uglify()
+          terser()
         ]
       })
         .then((bundle: any) => {
