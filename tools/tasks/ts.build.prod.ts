@@ -10,7 +10,6 @@ import { Config } from '../config';
 
 const typescript = require('rollup-plugin-typescript');
 const terser = require('rollup-plugin-terser').terser;
-const tsconfig = require('../../tsconfig.json');
 
 export = () => {
 
@@ -32,8 +31,7 @@ export = () => {
         plugins: [
           typescript(
             {
-              typescript: require('typescript'),
-              tsconfig: tsconfig
+              typescript: require('typescript')
             }
           ),
           terser()

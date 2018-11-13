@@ -1,6 +1,6 @@
 {
   "name": "qlik-sense-extensions-starter-pack",
-  "version": "1.0.5",
+  "version": "1.1.5",
   "description": "QlikSense Extensions Starter Pack",
   "devDependencies": {
     "@types/del": "3.0.1",
@@ -20,7 +20,7 @@
     "isstream": "^0.1.2",
     "rollup": "^0.66.0",
     "rollup-plugin-terser": "^3.0.0",
-    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-plugin-typescript": "^1.0.0",
     "run-sequence": "^2.2.1",
     "tildify": "^1.2.0",
     "ts-node": "^7.0.1",

@@ -9,7 +9,6 @@ import * as es from 'event-stream';
 import { Config } from '../config';
 
 const typescript = require('rollup-plugin-typescript');
-const tsconfig = require('../../tsconfig.json');
 
 export = () => {
 
@@ -24,14 +23,13 @@ export = () => {
 
       const path = entry.replace(/\\/g, '/');
       const split = path.split('/');
-      const extension = split[split.length -1];
+      const extension = split[split.length - 1];
 
       return rollup.rollup({
         input: `${path}/${extension}.ts`,
         plugins: [
           typescript({
-            typescript: require('typescript'),
-            tsconfig: tsconfig
+            typescript: require('typescript')
           })
         ]
       })
@@ -40,7 +38,7 @@ export = () => {
             file: `${Config.dist.dev}${path.split('src/')[1]}/${extension}.js`,
             format: 'iife'
           });
-        })
+        });
     });
 
   return es.merge.apply(tasks);
