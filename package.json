@@ -1,6 +1,6 @@
 {
   "name": "qlik-sense-extensions-starter-pack",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "QlikSense Extensions Starter Pack",
   "devDependencies": {
     "@types/del": "3.0.1",
@@ -11,7 +11,7 @@
     "@types/node": "^10.7.1",
     "@types/run-sequence": "0.0.30",
     "del": "^3.0.0",
-    "event-stream": "^4.0.0",
+    "event-stream": "^4.0.1",
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-sass": "^4.0.1",
