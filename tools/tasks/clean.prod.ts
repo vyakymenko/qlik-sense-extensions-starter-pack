@@ -6,5 +6,5 @@ import * as del from 'del';
 import { Config } from '../config';
 
 export = () => {
-  return del.sync([Config.dist.prod])
+  return del.sync([Config.dist.prod]);
 };

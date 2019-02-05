@@ -1,5 +1,4 @@
 import { existsSync, lstatSync, readFileSync, readdirSync } from 'fs';
-import * as runSequence from 'run-sequence';
 import * as gulp from 'gulp';
 import { join } from 'path';
 
@@ -53,7 +52,9 @@ export function loadCompositeTasks(compositeFile: string): void {
 function registerTasks(tasks: any) {
   Object.keys(tasks)
     .forEach((t: string) => {
-      gulp.task(t, (done: any) => runSequence.apply(null, [...tasks[t], done]));
+      gulp.task(t,
+        gulp.series(...tasks[t])
+      );
     });
 }
 

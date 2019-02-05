@@ -11,7 +11,7 @@ import { Config } from '../config';
 const typescript = require('rollup-plugin-typescript');
 const terser = require('rollup-plugin-terser').terser;
 
-export = () => {
+export = (done: any) => {
 
   const isDirectory = (source: any) => lstatSync(source).isDirectory();
   const getDirectories = (source: any) =>
@@ -38,10 +38,12 @@ export = () => {
         ]
       })
         .then((bundle: any) => {
-          return bundle.write({
+          bundle.write({
             file: `${Config.dist.prod}${path.split('src/')[1]}/${extension}.js`,
             format: 'iife'
           });
+
+          done();
         });
     });
   return es.merge.apply(tasks);
