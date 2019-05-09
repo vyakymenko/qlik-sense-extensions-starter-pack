@@ -5,7 +5,7 @@
 Qlik Sense Extensions Starter Pack provides fast, reliable and extensible starter for the development of QlikSense extensions.
 
 # Version
-2.0.0
+2.0.1
 
 # Tech
 

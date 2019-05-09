@@ -29,7 +29,8 @@ export = (done: any) => {
         input: `${path}/${extension}.ts`,
         plugins: [
           typescript({
-            typescript: require('typescript')
+            typescript: require('typescript'),
+            tsconfig: '../../'
           })
         ]
       })
