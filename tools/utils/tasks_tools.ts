@@ -53,7 +53,7 @@ function registerTasks(tasks: any) {
   Object.keys(tasks)
     .forEach((t: string) => {
       gulp.task(t,
-        gulp.series(...tasks[t])
+        gulp.series(tasks[t])
       );
     });
 }

@@ -31,7 +31,8 @@ export = (done: any) => {
         plugins: [
           typescript(
             {
-              typescript: require('typescript')
+              typescript: require('typescript'),
+              tsconfig: '../../'
             }
           ),
           terser()
