@@ -8,7 +8,7 @@ import * as rollup from 'rollup';
 import * as es from 'event-stream';
 import { Config } from '../config';
 
-const typescript = require('rollup-plugin-typescript');
+const rollupTypescript = require('@rollup/plugin-typescript');
 const terser = require('rollup-plugin-terser').terser;
 
 export = (done: any) => {
@@ -29,10 +29,10 @@ export = (done: any) => {
       return rollup.rollup({
         input: `${path}/${extension}.ts`,
         plugins: [
-          typescript(
+          rollupTypescript(
             {
               typescript: require('typescript'),
-              tsconfig: '../../'
+              tsconfig: ''
             }
           ),
           terser()
