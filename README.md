@@ -5,7 +5,7 @@
 Qlik Sense Extensions Starter Pack provides fast, reliable and extensible starter for the development of QlikSense extensions.
 
 # Version
-2.0.1
+3.0.0
 
 # Tech
 
@@ -114,7 +114,7 @@ export const Config: any = {
 ├── package.json
 ├── src
 │   ├── API
-│   │   └── Util.js
+│   │   └── Util.ts
 │   └── Extensions
 │       ├── ExtensionWithAMD
 │       │   ├── ExtensionWithAMD.qext
@@ -150,6 +150,7 @@ export const Config: any = {
 │   │   ├── scss.prod.ts
 │   │   ├── ts.build.dev.ts
 │   │   ├── ts.build.prod.ts
+│   │   ├── tsconfig.json
 │   │   ├── tslint.ts
 │   │   └── watch.dev.ts
 │   ├── tasks.json
@@ -157,7 +158,6 @@ export const Config: any = {
 │       ├── code_change_tools.ts
 │       ├── task.ts
 │       └── tasks_tools.ts
-├── tree.txt
 ├── tsconfig.json
 └── tslint.json
 ```
