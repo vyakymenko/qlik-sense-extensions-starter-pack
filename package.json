@@ -7,7 +7,7 @@
     "@types/gulp": "^4.0.5",
     "@types/gulp-sass": "4.0.0",
     "@types/gulp-sourcemaps": "0.0.32",
-    "@types/node": "^13.11.1",
+    "@types/node": "^13.13.1",
     "del": "^5.0.0",
     "event-stream": "^4.0.1",
     "gulp": "^4.0.2",
