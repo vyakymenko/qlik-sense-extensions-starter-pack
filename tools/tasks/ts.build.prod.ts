@@ -1,5 +1,5 @@
 /**
- * ES6 JavaScript Compiling {Production}
+ * TypeScript Compiling {Production}
  * @task js.build.prod
  */
 const { src, dest } = require('gulp');
