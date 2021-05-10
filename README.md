@@ -5,14 +5,14 @@
 Qlik Sense Extensions Starter Pack provides fast, reliable and extensible starter for the development of QlikSense extensions.
 
 # Version
-3.1.0
+4.0.0
 
 # Tech
 
 Qlik Sense Extensions Starter Pack uses a number of open source projects to work properly:
 
 * [Gulp] - the streaming build system
-* [Rollup] - awesome bundler
+* [esbuild] - awesome bundler
 
 # How to start
 
@@ -167,4 +167,4 @@ export const Config: any = {
 MIT
 
    [Gulp]: <http://gulpjs.com>
-   [Rollup]: <https://rollupjs.org>
+   [esbuild]: <https://github.com/evanw/esbuild>
