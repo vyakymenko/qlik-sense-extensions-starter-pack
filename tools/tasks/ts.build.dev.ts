@@ -28,7 +28,8 @@ export = () => {
       return src(`${path}/${extension}.ts`)
         .pipe(gulpEsbuild({
           outfile: `${extension}.js`,
-          format: 'iife'
+          format: 'iife',
+          bundle: true
         }))
         .pipe(dest(`${Config.dist.dev}${path.split('src/')[1]}`));
     });
